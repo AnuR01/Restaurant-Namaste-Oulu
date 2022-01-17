@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Namaste</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+      <nav>
+          <a href="index.html"><img src="images/Vector 1logo.jpg"></a>
+          <div class= "nav-links" id="navlinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li> <a href="index.html">HOME</a></li>
+                  <li> <a href="a la carte.html">MENU</a></li>
+                  <li> <a href="contact.html">CONTACT US</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>    
+      <h1>A LA CARTE MENU </h1>
+    </section> 
+
+    <!----section class="menu">
+       //<div class="row">
+            <div class="menu-left">
+                <img src="images/food6.jpg" alt="">
+                <h2>Menu</h2>
+            </div>
+           
+            <div class="menu-right"></div>
+        </div>
+    </section>
+
+    <----- gallery -------->
+
+    <section class="gallery">
+        <h1> GALLERY </h1>
+    
+    <div class="row">
+    <div class="gallery-column">
+        <img src="images/food7.jpg">
+    <div class="layer"> 
+        <h3>MENU FOR 2 PERSON</h3>
+    </div>
+     </div>
+    
+     <div class="gallery-column">
+        <img src="images/food5.jpg">
+    <div class="layer"> 
+        <h3>CHANA MASALA</h3>
+    </div>
+     </div>
+
+    </div>
+    </section>
+
+    <section>
+        <div class="table">
+            <table>
+                <caption>MENU LIST</caption>
+                
+                <tr>
+                    <th> </th>
+                    <th> Description</th>
+                    <th> Price</th>
+                    
+                </tr>
+                <tr>
+                    <td> PAPADUM</td>
+                    <th>Flat-bread made with lentils </th>
+                    <th> 5.00€ </th>
+                    
+                </tr>
+                <tr>
+                    <td> CHICKEN TIKKA</td>
+                    <th> Grilled chicken in tandoor oven 
+                         with <br> side sauce and rice </th>
+                    <th> 28.00€ </th>
+                    
+                </tr>
+                <tr>
+                    <td> MANGO LASSI </td>
+                    <th>It's made with mango and milk </th>
+                    <th> 4.00€ </th>
+                    
+                </tr>
+            </tr>
+            <tr>
+                <td> GULAB JAMUN </td>
+                <th>It's made with milk and flour </th>
+                <th> 5.00€ </th>
+                
+            </tr>
+            </table>
+        </div>
+    </section>
+
+    
+<!---Footer social media icons-->
+
+<section class="footer">
+    <h4>Follow  Us </h4>
+
+<div class="someicons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-tripadvisor"></i>
+   
+</div>
+
+</section>
+
+
+<!---------Javascript for Toggle Menu------->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Namaste</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+      <nav>
+          <a href="index.html"><img src="images/Vector 1logo.jpg"></a>
+          <div class= "nav-links" id="navlinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li> <a href="index.html">HOME</a></li>
+                  <li> <a href="a la carte.html">MENU</a></li>
+                  <li> <a href="contact.html">CONTACT US</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>    
+
+      <div class="text-box">
+           <h1>Restaurant Namaste</h1>
+           <p>Our restaurant is one the most authentic Indian restaurant in Oulu Region
+            <br> As our name Namaste, basically means greeting someone in Indian culture
+            <br> We wholeheartedly welcome all our customers and are very happy to serve them with the best food
+           <br>At Restaurant Namaste we try to take our customers on journey of India through our food and our service
+          </p>
+          <a href="https://www.youtube.com/watch?v=35npVaFGHMY" class="hero-btn">Visit and experience it yourself!</a>
+      </div>> 
+    </section>
+    
+<!----- Options ----->
+
+<section class="options">
+    <h1>FOOD OPTIONS</h1>
+    <p> The food can be modified according to your need and taste!</p>
+
+    <div class="row">
+      <div class="options-column">
+        <h3>Spice Level</h3>
+        <p> The food can be made spice level Mild, Medium, Hot or Super Hot</p>
+</div>
+<div class="options-column">
+    <h3>Vegan Food</h3>
+    <p> The food, vegetarian options, can also be made as vegan.</p>
+</div>
+<div class="options-column">
+    <h3>Special requirements</h3>
+    <p> The food can be made can be made lactosefree, glutenfree, or according to the needs</p>
+</div>
+</div>
+
+</section>
+
+<!------- gallery -------->
+
+<section class="gallery">
+    <h1> GALLERY </h1>
+
+<div class="row">
+<div class="gallery-column">
+    <img src="images/food1.png">
+<div class="layer"> 
+    <h3>CHICKEN TIKKA</h3>
+</div>
+ </div>
+
+ <div class="gallery-column">
+    <img src="images/food2.png">
+<div class="layer"> 
+    <h3>MIX VEG THALI</h3>
+</div>
+ </div>
+
+ <div class="gallery-column">
+    <img src="images/food3.png">
+<div class="layer"> 
+    <h3>PANEER LABABDAR</h3>
+</div>
+ </div>
+
+</div>
+</section>
+
+<!----contact us for more-->
+
+<section class="contact">
+<a href="contact.html" class="hero-btn">CONTACT US</a>
+</section>
+
+<!---Footer social media icons-->
+
+<section class="footer">
+    <h4>Follow  Us </h4>
+
+<div class="someicons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-tripadvisor"></i>
+   
+</div>
+</section>
+<!---------Javascript for Toggle Menu------->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
